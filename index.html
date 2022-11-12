@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>农意网</title>
+	<style>
+		<link rel="stylesheet" href="css/1.css">
+
+/*		#box{
+			width: 380px;
+			margin: 30px auto;
+			font-family: 'Microsoft YaHei';
+			font-size: 14px;
+			}
+
+		input{
+			width: 260px;
+			border: 1px solid #e2e2e2;
+			height: 30px;
+			float: left;
+			background-image: url(images/search.jpg);
+			background-repeat: no-repeat;
+			background-size: 25px;
+			background-position:5px center;
+			padding:0 0 0 40px;
+		}
+
+		#search{
+			width: 78px;
+			height: 32px;
+			float: right;
+			background: black;
+			color: white;
+			text-align: center;
+			line-height: 32px;
+			cursor: pointer;
+		}*/
+
+
+		input {
+		    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+		    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+		    /* 默认有灰色边框我们需要手动去掉 */
+		    border: 0; 
+		    outline: none;
+		}
+		/* 把我们所有标签的内外边距清零 */
+/*		* {
+		    margin: 0;
+		    /*padding: 0;*/
+		    /* css3盒子模型 
+		    box-sizing: border-box;
+		}*/
+		.search{
+		  position: absolute;
+		  left: 346px;
+		  top:25px;
+		  width: 538px;
+		  height: 36px;
+		  border: 2px solid green;
+		}
+		.search input{
+		  float: left;
+		  width: 454px;
+		  height: 33px;
+		  padding-left: 10px;
+		}
+		.search button{
+		  float: left;
+		  width: 80px;
+		  height: 33px;
+		  background-color: green;
+		  font-size: 16px;
+		  color: #fff;
+		}
+
+
+</style>
+</head>
+<body style="background-image: url(picture/背景.jpg);">
+    <h1>农意网</h1>
+
+<!-- 搜索框 -->
+    <div class="search" style="float: left;" >
+        <input type="search" name="" id="" placeholder="输入">
+        <button type="button">搜索</button>
+    </div>
+
+    <img src="picture/页眉.jpg" alt="" width="100%" height="250px"/>
+
+	<hr />
+
+<!-- 图片 -->
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/章丘大葱.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">章丘大葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/昌乐西瓜.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">昌乐西瓜</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/金乡大蒜.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">金乡大蒜</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/莱芜生姜.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">莱芜生姜</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/莱阳梨.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">莱阳梨</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/乐陵小枣.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">乐陵小枣</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/临沂洋葱.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">临沂洋葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/平阴玫瑰.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">平阴玫瑰</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/青州蜜桃.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">青州蜜桃</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/山东临沂蒜苔.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">山东临沂蒜苔</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/山东螺丝椒.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">山东螺丝椒</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+	<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/山东千禧圣女果.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">山东千禧圣女果</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/寿光茄子.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">寿光茄子</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/寿光水果萝卜.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">寿光水果萝卜</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/烟台苹果.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">烟台苹果</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/沂蒙大姜.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">沂蒙大姜</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/沾化大枣.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">沾化大枣</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 7px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		<div style="width: 165px;margin: 0 auto;float: left;" >
+		<dl style="width: 165px;height: 200px;font: left;">
+			<dt><img src="picture/诸城玉米.jpg" width="165px" height="180px"></dt>
+			<dd><a href="#">诸城玉米</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+
+
+
+<!-- 手机350宽度 -->
+		<!-- <img src="picture/章丘大葱.jpg" alt="">
+		<img src="picture/临沂洋葱.jpg" alt=""> -->
+				<!-- 一行4个跑步机 4个dl<div的宽度<5个dl -->
+		<!-- 让整个div居中	margin:0 auto;（设置左右边距为auto） -->
+<!-- 	<div style="width: 350px;margin: 0 auto;float: left;" >
+
+		<dl style="width: 350px;height: 400px;font: left;">
+			<dt><img src="picture/章丘大葱.jpg" width="350px" height="350px"></dt>
+			<dd><a href="#">章丘大葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+
+		<dl style="width: 350px;height: 400px;font: left;">
+			<dt><img src="picture/临沂洋葱.jpg" width="350px" height="350px"></dt>
+			<dd><a href="#">临沂洋葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+
+		<dl style="width: 350px;height: 400px;font: left;">
+			<dt><img src="picture/莱阳梨.jpg" width="350px" height="350px"></dt>
+			<dd><a href="#">莱阳梨</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+
+		<dl style="width: 350px;height: 400px;font: left;">
+			<dt><img src="picture/乐陵小枣.jpg" width="350px" height="350px"></dt>
+			<dd><a href="#">乐陵小枣</a></dd>
+
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+
+		</div> -->
+
+<!-- <div>			
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/章丘大葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">章丘大葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/临沂洋葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">临沂洋葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/莱阳梨.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">莱阳梨</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>		
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/乐陵小枣.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">乐陵小枣</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		
+	</div>
+</div>
+<div style="width: 10px;margin: 0 auto;float: left;"><p> </p></div>
+<div>			
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/章丘大葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">章丘大葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/临沂洋葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">临沂洋葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/莱阳梨.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">莱阳梨</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>		
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/乐陵小枣.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">乐陵小枣</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		
+	</div>
+</div>
+
+
+<div>			
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/章丘大葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">章丘大葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/临沂洋葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">临沂洋葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/莱阳梨.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">莱阳梨</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>		
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/乐陵小枣.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">乐陵小枣</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		
+	</div>
+</div>
+<div style="width: 10px;margin: 0 auto;float: left;"><p> </p></div>	
+<div>			
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/章丘大葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">章丘大葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/临沂洋葱.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">临沂洋葱</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/莱阳梨.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">莱阳梨</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>		
+	</div>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+
+	<div style="width: 175px;margin: 0 auto;float: left;" >
+		<dl style="width: 175px;height: 200px;font: left;">
+			<dt><img src="picture/乐陵小枣.jpg" width="175px" height="175px"></dt>
+			<dd><a href="#">乐陵小枣</a></dd>
+			<dd><strong style="color: red;">￥100</strong></dd>
+		</dl>
+	<div style="width: 10px;margin: 0 auto;float: left;">
+		<P> </P>
+	</div>
+		
+	</div>
+</div>
+ -->
+
+
+
+</body>
+</html>
